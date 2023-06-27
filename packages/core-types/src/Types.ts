@@ -50,7 +50,7 @@ export type FallbackApiResponse = {
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
 // Review
-export const DEFAULT_FEE_RECEIVER = '0x7306aC7A32eb690232De81a9FFB44Bb346026faB'
+export const DEFAULT_FEE_RECEIVER = '0x1dd907abb024e17d196de0d7fe8eb507b6ccaae7'
 
 export const GAS_USAGE_OFFSET = 4928 + 2360
 

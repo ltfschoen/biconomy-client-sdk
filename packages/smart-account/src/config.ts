@@ -1,9 +1,10 @@
 import { ChainId, SmartAccountConfig, SignTypeMethod } from '@biconomy/core-types'
 
 export const ProductionConfig: SmartAccountConfig = {
-  activeNetworkId: ChainId.POLYGON_MAINNET,
+  activeNetworkId: ChainId.MOONBASE_ALPHA,
   supportedNetworksIds: [
     ChainId.MAINNET,
+    ChainId.MOONBASE_ALPHA,
     ChainId.GOERLI,
     ChainId.POLYGON_MUMBAI,
     ChainId.POLYGON_MAINNET,
@@ -26,6 +27,10 @@ export const ProductionConfig: SmartAccountConfig = {
     {
       chainId: ChainId.MAINNET,
       providerUrl: 'https://eth-mainnet.g.alchemy.com/v2/oIGKtCZoQ2AQUt0sfD46oXB6mv47u9yy'
+    },
+    {
+      chainId: ChainId.MOONBASE_ALPHA,
+      providerUrl: 'https://rpc.api.moonbase.moonbeam.network'
     },
     {
       chainId: ChainId.GOERLI,
@@ -71,8 +76,9 @@ export const ProductionConfig: SmartAccountConfig = {
 }
 
 export const StagingConfig: SmartAccountConfig = {
-  activeNetworkId: ChainId.POLYGON_MUMBAI,
+  activeNetworkId: ChainId.MOONBASE_ALPHA,
   supportedNetworksIds: [
+    ChainId.MOONBASE_ALPHA,
     ChainId.GOERLI,
     ChainId.POLYGON_MUMBAI,
     ChainId.BSC_TESTNET,
@@ -87,6 +93,10 @@ export const StagingConfig: SmartAccountConfig = {
   biconomySigningServiceUrl: 'https://paymaster-signing-service.staging.biconomy.io/api/v1/sign',
   strictSponsorshipMode: false,
   networkConfig: [
+    {
+      chainId: ChainId.MOONBASE_ALPHA,
+      providerUrl: 'https://rpc.api.moonbase.moonbeam.network'
+    },
     {
       chainId: ChainId.GOERLI,
       providerUrl: 'https://eth-goerli.alchemyapi.io/v2/lmW2og_aq-OXWKYRoRu-X6Yl6wDQYt_2'
@@ -115,8 +125,9 @@ export const StagingConfig: SmartAccountConfig = {
 }
 
 export const DevelopmentConfig: SmartAccountConfig = {
-  activeNetworkId: ChainId.POLYGON_MUMBAI,
+  activeNetworkId: ChainId.MOONBASE_ALPHA,
   supportedNetworksIds: [
+    ChainId.MOONBASE_ALPHA,
     ChainId.GOERLI,
     ChainId.POLYGON_MUMBAI,
     ChainId.BSC_TESTNET,
@@ -131,6 +142,10 @@ export const DevelopmentConfig: SmartAccountConfig = {
   biconomySigningServiceUrl: 'https://paymaster-signing-service.test.biconomy.io/api/v1/sign',
   strictSponsorshipMode: false,
   networkConfig: [
+    {
+      chainId: ChainId.MOONBASE_ALPHA,
+      providerUrl: 'https://rpc.api.moonbase.moonbeam.network'
+    },
     {
       chainId: ChainId.GOERLI,
       providerUrl: 'https://eth-goerli.alchemyapi.io/v2/lmW2og_aq-OXWKYRoRu-X6Yl6wDQYt_2'
