@@ -1,5 +1,6 @@
 {
   "name": "biconomy-sdk",
+  "version": "2.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/bcnmy/biconomy-client-sdk"
@@ -12,7 +13,7 @@
     "test": "lerna run test --stream --npm-client=yarn",
     "test:ci": "FORCE_COLOR=1 lerna run test:ci --stream --npm-client=yarn",
     "format": "lerna run format --npm-client=yarn",
-    "postinstall": "cd packages/ethers-lib; hardhat compile",
+    "postinstall": "yarn global install ts-node typescript hardhat && cd packages/ethers-lib; hardhat compile",
     "prettier": "lerna run prettier --npm-client=npm",
     "diff": "lerna diff",
     "new-version": "lerna version patch --no-git-tag-version --no-push --conventional-commits --yes",

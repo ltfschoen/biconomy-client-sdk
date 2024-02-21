@@ -29,6 +29,7 @@ export enum ChainNames {
 export enum ChainId {
   // Ethereum
   MAINNET = 1,
+  MOONBASE_ALPHA = 1287
   GOERLI = 5,
   POLYGON_MUMBAI = 80001,
   POLYGON_MAINNET = 137,
